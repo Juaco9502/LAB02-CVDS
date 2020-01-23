@@ -32,3 +32,27 @@ Los conceptos clave del repositorio central son los siguientes:
 - Este repositorio es administrado por la comunidad Maven.
 - No es necesario que se configure.
 - Requiere acceso a internet para ser buscado.
+
+
+## Crear un arquetipo
+>mvn archetype:generate
+
+## Compílar
+![Compilar](/assets/images/tux.png)
+
+## Para ver el conjunto de archivos y directorios creados
+![Ver archivos](/assets/images/tux.png)
+
+## Ejecutar package
+![Ejecutar](/assets/images/tux.png)
+
+## Objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn
+- ***validate*** : Valida que el proyecto es correcto y que toda la información necesaria está disponible. Esto también asegura que se descarguen las dependencias.
+- ***compile*** : Compila el código fuente del proyecto.
+- ***test*** : Ejecuta las pruebas contra el código fuente compilado utilizando un marco de prueba de unidad adecuado. Estas pruebas no deberían requerir que el código se empaquete o implemente.
+- ***package*** : Empaqueta el código compilado en su formato distribuible, como un JAR.
+- ***install*** : Instale el paquete en el repositorio local, para usarlo como dependencia en otros proyectos localmente.
+- ***deploy*** : Copia el paquete final en el repositorio remoto para compartirlo con otros desarrolladores y proyectos.
+
+# 
+
