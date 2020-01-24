@@ -1,5 +1,5 @@
 # Apache Maven
-### Por: Juan Camilo Ortiz
+### Por: Juan Camilo Ortiz Medina
 ## 1. Cuál es su mayor utilidad
 Apache Maven es una herramienta de gestión y comprensión de proyectos de software. Basado en el concepto de un modelo de objeto de proyecto (POM), Maven puede administrar la construcción, los informes y la documentación de un proyecto a partir de una información central.
 
@@ -38,13 +38,24 @@ Los conceptos clave del repositorio central son los siguientes:
 >mvn archetype:generate
 
 ## Compílar
-![Compilar](/assets/images/tux.png)
+> mvn package
+>
+> mvn -U package
+![Compilar](https://i.imgur.com/kBx5mYg.png)
 
 ## Para ver el conjunto de archivos y directorios creados
-![Ver archivos](/assets/images/tux.png)
+> tree
+>
+> tree/f
+![Ver archivos](https://i.imgur.com/oPiIz3C.png)
 
-## Ejecutar package
-![Ejecutar](/assets/images/tux.png)
+## Ejecutar proyecto Maven
+>mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App"
+![Ejecutar](https://i.imgur.com/5BsXGpj.png)
+
+## Ejecutar proyecto Maven con argumentos
+>mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App" -Dexec.args="Juan Camilo"
+![Ejecutar_Con_Argumentos](https://i.imgur.com/9XqypQY.png)
 
 ## Objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn
 - ***validate*** : Valida que el proyecto es correcto y que toda la información necesaria está disponible. Esto también asegura que se descarguen las dependencias.
@@ -54,5 +65,23 @@ Los conceptos clave del repositorio central son los siguientes:
 - ***install*** : Instale el paquete en el repositorio local, para usarlo como dependencia en otros proyectos localmente.
 - ***deploy*** : Copia el paquete final en el repositorio remoto para compartirlo con otros desarrolladores y proyectos.
 
-# 
+# Shapes
+
+##Sin parámetros
+![No_parametros](https://i.imgur.com/uKu6SG1.png)
+
+##Parámetro: qwerty
+![qwerty](https://i.imgur.com/ERH83Y0.png)
+
+##Parámetro: pentagon
+![pentagon](https://i.imgur.com/rXzignk.png)
+
+##Parámetro: Hexagon
+![Hexagon](https://i.imgur.com/C1GkxUO.png)
+
+## ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
+Solo funciona en el ultimo caso , Parametro : Hexagon por que asi esta definida  en el archivo RegularShapeType.java
+
+
+
 
