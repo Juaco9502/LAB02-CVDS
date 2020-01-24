@@ -41,20 +41,24 @@ Los conceptos clave del repositorio central son los siguientes:
 > mvn package
 >
 > mvn -U package
+
 ![Compilar](https://i.imgur.com/kBx5mYg.png)
 
 ## Para ver el conjunto de archivos y directorios creados
 > tree
 >
 > tree/f
+
 ![Ver archivos](https://i.imgur.com/oPiIz3C.png)
 
 ## Ejecutar proyecto Maven
 >mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App"
+
 ![Ejecutar](https://i.imgur.com/5BsXGpj.png)
 
 ## Ejecutar proyecto Maven con argumentos
 >mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App" -Dexec.args="Juan Camilo"
+
 ![Ejecutar_Con_Argumentos](https://i.imgur.com/9XqypQY.png)
 
 ## Objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn
@@ -67,16 +71,16 @@ Los conceptos clave del repositorio central son los siguientes:
 
 # Shapes
 
-##Sin parámetros
+## Sin parámetros
 ![No_parametros](https://i.imgur.com/uKu6SG1.png)
 
-##Parámetro: qwerty
+## Parámetro: qwerty
 ![qwerty](https://i.imgur.com/ERH83Y0.png)
 
-##Parámetro: pentagon
+## Parámetro: pentagon
 ![pentagon](https://i.imgur.com/rXzignk.png)
 
-##Parámetro: Hexagon
+## Parámetro: Hexagon
 ![Hexagon](https://i.imgur.com/C1GkxUO.png)
 
 ## ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
